@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        if (0>1) {
+            console.log("success!")
+        }else{
+            console.log("failure")
+        }
+
+        // eg
+        var x= (new Date()).getDay();
+        console.log(x);
+        //获取今天的星期值，0为星期天
+        var y;
+
+        if ( (x==6) || (x==0) ) {
+               y="周末";
+        }else{
+              y="工作日";
+        }
+
+        console.log(y);
+
+
+        //switch-case 语句
+
+        x=8;
+        switch (x){
+            case 0:console.log("Sunday");break;
+            case 1:console.log("Monday");break;
+            case 2:console.log("Tuesday");break;
+            case 3:console.log("周三");break;
+            case 4:console.log("周四");break;
+            case 5:console.log("Friday");break;
+            case 6:console.log("周六");break;
+            default :console.log("未定义");
+        }
+
+        //  for循环
+       //   推荐
+        for (var i=0;i<10;i++){
+            console.log("ok")
+            document.write("<h1>hello"+i+"</h1>")
+        }
+
+        //1+2+3+...+100
+        var sum=0;
+        for (var i= 1;i<=100;i++){
+            sum+=i;
+        }
+        alert(sum)
+
+       s=[12,"yuan",true,3.14];   // 数组
+
+        console.log(s);
+        console.log(typeof s);
+
+
+        for(var i in s){
+            console.log(s[i]);
+        }
+        // while循环-->
+        var i=0;
+        while (i<10){
+            document.write("<h1>"+i+"</h1>");
+            i++;
+            break; //跳出整个循环
+        }
+
+        //异常语句
+
+        try {
+            console.log("hello");
+            console.log(x);
+        }
+        catch(e){
+            console.log(e);
+        }
+        finally{
+            console.log("finally");
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

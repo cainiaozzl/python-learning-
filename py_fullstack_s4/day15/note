@@ -1,0 +1,33 @@
+字符编码
+ASCII
+
+    GB2312 1980 6700
+    GBK1.0
+    GB18030
+  Unicode
+    utf-32
+    utf-16
+    utf-8 变长的字符编码,英文占一个字节，中文占３个
+
+字符串
+　　strip
+    split
+    len
+    顾头不顾尾
+    步长
+ 列表
+ 增
+ 　　name = []
+    name.append()
+    name.insert(index,element)
+
+    name.index
+  删
+    name.del()
+    name.pop(index)
+
+   改
+    names.extend()
+
+
+    names2.sort() 按ＡＳＣＩＩ码顺序排序

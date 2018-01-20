@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+    /*.c1[po="p2"]{*/
+        /*color: red;*/
+    /*} !*常用*!*/
+    [po~="p"]{
+        color: green; /*不常用*/
+    }
+
+    /*.c1{*/
+        /*color: red;*/
+    /*}*/
+    /*.btn{*/
+        /*font-size: 30px;*/
+    /*}*/
+</style>
+
+</head>
+<body>
+
+<p></p>
+<div po="p1 p" class="c1 btn">p1</div>
+
+<div po="p2 p" class="c1">p2</div>
+<div class="c1">p3</div>
+</body>
+</html>

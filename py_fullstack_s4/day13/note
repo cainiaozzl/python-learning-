@@ -1,0 +1,55 @@
+变量
+　　　变量是什么：
+        变量是个容器
+     作用：
+     存储数据到内存
+     如何用：
+     　　　name = david
+          cost = 999
+     命名规则：
+     数字或下划线的任意组合
+     变量名的第一个字符不能是数字
+     以下关键字不能声明为变量名
+     ['and','as','assert','break','class','continue,'def',
+     'elif','else','expect','exec','finally','for','from','global'
+     'if','import','in','is','lambda','not','or','pass',
+     'print','raise','return','try','while','with','yield']
+      驼峰体
+      Ｔracffic_Cost　C#
+      tracffic_cost #python官方推荐
+     一些大写变量是常亮
+     如：AGE_OF_OLDBOY
+integer = int 整型
+string = str 字符串
+同一类型的数据类型可互相操作，
+字符 不能与整型计算与比较
+
+
+
+
+元组
+   跟列表一样
+   但为只读列表
+   dir（）把传入的数据类型的所有方法以列表的形式返回
+作用？
+   tuple is for declare that the data contated in the tuple shouldn't be changed(modify).
+
+      list(tuple) 变成列表
+      tuple(list)  变成元组
+
+ 集合
+    关系测试
+
+       交集  两个都有
+       差集  在列表a里有,b里没有
+       并集  把两个列表里的元素 合并在一起 去重
+
+ python3
+ 　　所有字符在内存里都是unicode
+    解释器读取文件的默认编码是utf-8
+    str == unicode
+    bytes == bytes
+
+ 在py2里，你看到的字符串，就是bytes
+  str == bytes
+  unicode == unicode

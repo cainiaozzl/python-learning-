@@ -1,0 +1,49 @@
+实参的角度
+>>> def my_sum(x,y):
+...     return x+y
+...
+>>> res=10*my_sum(1,2)
+>>> res
+30
+>>> my_sum(1,2)
+3
+>>> print(my_sum(1,2))
+3
+
+
+形参的角度：
+位置参数：def foo(x,y,z)
+
+默认参数:def foo(x,y=1)
+
+*args: def foo(x,*args)
+    foo(1,2,3,4,5,6)
+
+**kwargs:def foo(x,**kwargs)
+    foo(x=1,y=3,z=3)
+
+def foo(x,*args,**kwargs)
+
+foo(1,2,3,4,5,6,a=1,b=2,c=3)
+
+x=1
+args=(2,3,4,5,6)
+kwargs={'a':1,'b':2,'c':3}
+
+
+嵌套函数
+def auth(name,password,sex='male'):
+    pass
+
+def timmer(*args,**kwargs):             #args=() kwargs={'name':1....}
+    start_time=time.time()
+    auth(*args,**kwargs)
+    stop_time=time.time()
+    print('run time is %s' %(stop_time-star_time))
+
+timer(name=1,password=123,sex='female')
+
+
+
+
+

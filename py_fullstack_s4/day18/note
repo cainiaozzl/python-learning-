@@ -1,0 +1,11 @@
+python2.x:
+    1 str:bytes
+    2 unicode:unicode编码后的二进制数据
+
+python3.x:
+    1 str: unicode
+    2 bytes: bytes
+
+注意点: 1 unicode, utf8,GBK都是编码规则。
+       2 为什么内存存储unicode。
+       3 程序执行前和执行后的两个状态

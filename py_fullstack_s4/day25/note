@@ -1,0 +1,12 @@
+age(5) = age(4)+2
+
+age(4) = age(3)+2
+
+age(3) = age(2)+2
+
+age(2) = age(1)+2
+
+age(1)=10
+
+n=1 res=10
+n>1 res=age(n-1)+2

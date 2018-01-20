@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        a:link{
+            color:#2459a2;
+        }
+        a:hover{
+            color: red;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellow;
+        }
+        .top{
+            background-color: #2459a2;
+            width: 200px;
+            height: 200px;
+        }
+
+        .bottom{
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+        }
+        .outer:hover .top{
+            background-color: red;
+        }
+    p:after{
+        content: "world";   /*动态添加内容*/
+        color: red;
+    }
+        p:before{
+        content: "world";   /*动态添加内容*/
+        color: green;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#">hello Python</a>
+
+<div class="outer">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <p>hello</p>
+</div>
+</body>
+</html>

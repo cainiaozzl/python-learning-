@@ -1,0 +1,21 @@
+CSS
+1 查找标签（选择器）
+2 操作标签(属性操作)
+
+引入方式:
+1.行内式
+2.嵌入式
+3.链接式　<!--<link rel="stylesheet" href="test.css">-->推荐
+4.导入式　<!--<style>@import "test.css";</style>-->不推荐
+
+选择器
+１.基本选择器
+标签选择器 p{font-size:40px}
+id选择器 #info{font-size:40px}
+class选择器　.info{font-size:40px}
+通配选择器 *{color:red}
+２.组合选择器
+
+注意：一个块级标签可以嵌套块级标签,也可以嵌套内联标签
+但是内联标签不能嵌套块级标签
+例外:p标签不能嵌套块级标签

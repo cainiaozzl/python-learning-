@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .outer p{   /*后代选择器p,需要加空格*/
+            color: red;
+        }
+
+        .outer>p{  /*> 子代选择器*/
+            color: red;
+        }
+
+
+    .outer+p{  /*＋毗邻选择器：需要向下紧挨着,才能生效*/
+            color: red;
+        }
+
+     .p1,.div2{
+         color:gold;
+     }
+        /*后代选择器，普通兄弟选择器应用最多*/
+    </style>
+</head>
+<>
+
+<p>PPP</p>
+<div class="outer">
+        <div class="div1">
+            div1
+            <p>P</p>
+        </div>
+
+        <P>pp</P>
+</div>
+<p>PPP</p>
+
+
+
+<p class="p1">PPP</p>
+
+<div class="div2">div2</div>
+</body>
+</html>

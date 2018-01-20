@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>用户注册</h1>
+<form action="" method="post">
+    <p>姓名: <input type="text" name="username"></p>
+    <p>密码:<input type="password" name="pwd"></p>
+    <p>爱好:篮球<input type="checkbox" name="hobit" value="basketball">
+            足球<input type="checkbox" name="hobit" value="football">
+            乒乓球<input type="checkbox" name="hobit" value="pingpangball"></p>
+
+    <p>性别 男<input type="radio" name="sex" value="man">
+        女<input type="radio" name="sex" value="woman">
+        其他<input type="radio" name="sex" value="other"></p>
+
+    <p><input type="hidden"></p>  <!--不让客户看到-->
+    <p><input type="file" value="filename"></p>
+    <p><input type="button" value="button"></p> <!--这个buton不会作用,除非跟js交互-->
+
+    <select size="1" multiple> <!--加size一次显示多个,不用下拉;multiple多选特性multiple="multiple"或multiple-->
+        <optgroup label="中国">
+            <option value="hebei">河北省</option>
+            <option value="henan">河南省</option>
+            <option value="sanxi"　selected="selected">山西省</option>
+            <option value="shanxi" selected>陕西省</option> <!--默认单独选-->
+             <option value="guangdong">广东省</option>
+            <option value="guangxi">广西省</option>
+        </optgroup>
+
+
+    </select>
+<!--textarea label标签--->
+
+    <p>简介:</p>
+
+    <p>
+    <textarea name="jianjie" rows="8" cols="32">
+    </textarea>
+    </p>
+    <label for="username">用户名</label>
+    <input type="text" name="username" id="username">
+
+
+<!--fieldset标签-->
+    <fieldset>
+        <legend>登录吧</legend>
+            <input type="text">
+
+    </fieldset>
+
+
+
+
+    <p><input type="submit" value="submit"></p>　<!--这个value只是一个标示-->
+
+
+</form>
+
+</body>
+</html>
+
+<!--div;name属性,value属性-->

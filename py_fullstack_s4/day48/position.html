@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+         *{
+            margin: 0;
+        }
+        .item1{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+
+        }
+        .item2{
+           background-color: thistle;
+            width: 200px;
+            height: 200px;
+            position: absolute; /*区别relative*/
+            top: 200px;
+            left: 200px;
+        }
+        .item3{
+           background-color: gold;
+            width: 200px;
+            height: 200px;
+        }
+
+         .outer{
+            border: 1px solid red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="item1"></div>
+
+<div class="outer">
+    <div class="item2"></div>
+    <div class="item3"></div>
+</div>
+</body>
+</html>

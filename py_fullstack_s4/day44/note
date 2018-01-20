@@ -1,0 +1,10 @@
+html是一种标记语言(markup language)　渲染顺序:从上到下,从左到右
+
+常用标签:
+
+    hn p br
+标签分类：
+
+    １．块级标签　--block: 独占一行
+     ２．内联标签　--inline 根据内容而定　sub sup
+

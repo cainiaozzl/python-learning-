@@ -1,0 +1,103 @@
+三元运算:
+>>> a = 6
+>>> b = 4
+>>> c = a if a < b else b
+>>> c
+4
+
+
+16进制
+0-9 A B C D E F
+
+1011 1001 1011 1001
+B     9    B    9
+16转2:
+B       F       4       B       5
+1011  1111    0100     1011    0101
+10111111010010110101
+
+>>> hex(10)
+'0xa'
+>>> hex(11)
+'0xb'
+>>> hex(155)
+'0x9b'
+
+元组:
+   跟列表相似，它是只读的，不可变列表。
+   dir() 把传入的数据类型的所有方法以列表的形式返回
+
+>>> names = ('abc','david','rabit')
+>>> dir(names)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> names[1] = 'ddd'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+
+    作用？
+    声明元组存储的数据是不可修改的
+
+list(tuple) 变成列表
+tuple(list)  变成元组
+
+
+集合 set
+    关系测试
+        交集  两个都有
+        差集  在列表a里有,b里没有
+        并集  把两个列表里的元素 合并在一起 去重
+特性：去重，无序的
+
+string
+
+字符编码
+
+ASCII 英文
+GB2312 1980
+    GBK　1995
+    GB18030
+　1990  Unicode
+    utf-8
+unicode是翻译官，如日本的
+
+python2.7　报错：Non-ASCII character '\xe4' in file 　, but no encoding declared;
+Defining the Encodingsee http://python.org/dev/peps/pep-0263/ for details
+
+Python will default to ASCII as standard encoding if no other encoding hints are given.
+py2默认编码是ASCII码，除非提前指定
+./xxxpy.py #该执行方式需在文件头声明解析器
+python xxxpy.py　#该执行方式不需要声明解析器
+
+#两种声明方法如下
+
+#１：
+# coding=<encoding name>
+
+
+#２：
+# -*- coding: <encoding name> -*-
+'''
+see htt文件操作
+p://python.org/dev/peps/pep-0263/ for details
+
+
+数据类型
+    str #它只是人类可读的抽象的表示形式
+    int
+    float
+    list
+    tuple
+    dict
+    set
+    bytes 字节类型(二进制类型),就是一个8bits的字节,
+    所有的字节要存到内存里,硬盘里,都是bytes格式
+    在py2里,你看到的字符串,就是bytes str == bytes
+
+    python3
+ 　　    所有字符在内存里都是unicode
+        解释器读取文件的默认编码是utf-8
+        str == unicode
+        bytes == bytes
+
+三级菜单优化版

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="2px" cellpadding="10px" cellspacing="3px">
+    <!--<tr>-->
+        <!--<td>语文</td>-->
+        <!--<td>数学</td>-->
+        <!--<td>音乐</td>-->
+    <!--</tr>-->
+
+    <tr>
+        <th>语文</th>  <!--table head自带格式加粗显示-->
+        <th>数学</th>
+        <th>音乐</th>
+    </tr>
+
+    <tr>
+        <td>111</td>
+        <td colspan="2">222</td>　<!--<td>３３３</td>删除了，合并单元格，让２２２占２列-->
+    </tr>
+
+    <tr>
+        <td rowspan="2">444</td> <!--<td>777</td>删除了，合并单元格，让４４４站两行-->
+        <td>555</td>
+        <td>666</td>
+    </tr>
+
+    <tr>
+        <td>888</td>
+        <td>999</td>
+    </tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+    /*p{*/
+    /*color: red;*/
+    /*}*/
+
+    /*#id1{*/
+        /*background-color: bisque;*/    /*优先级高*/
+    /*}*/
+
+    /*.d2{*/
+        /*background-color: blueviolet;　　!*其次*!*/
+    /*}*/
+
+    /*div{*/
+        /*background-color: darkblue;　　!*三者最低*!*/
+    /*}*/
+
+    div p{
+        color:green;
+    }
+    .d1 p{
+    color: red;　/*优先级１1*/
+    }
+    .p1{
+        color: sienna;
+    } /*优先级10*/
+
+    /*#id1 .p1{*/
+        /*color:darkcyan ;*/
+    /*}     !*优先级101*/
+    .d1.p2{
+        color: red;
+    }
+    .d1 .c2 .p2{
+        color: green; /*层级关系越多,优先级越高*/
+    }
+
+    .p2{
+        color: red !important; /*important忽略所有层级优先级*/
+    }
+</style>
+
+</head>
+<body>
+
+<div class="d1 d2" id="id1">
+    DIV
+    <p class="p1">PPP</p>
+    <div class="c2">
+        <div class="c3">
+            <p class="p2">inner</p>
+        </div>
+    </div>
+</div>
+
+<p>hello</p>
+
+<span>span</span>
+
+</body>
+</html>

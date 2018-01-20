@@ -1,0 +1,9 @@
+ p{                         /*p就是选择器*/
+            color: white;
+            background-color: royalblue;
+        }
+
+ div{
+     font-size:40px;
+     color:red;
+ }
